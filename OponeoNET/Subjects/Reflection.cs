@@ -1,7 +1,7 @@
 ﻿using System;
 using TimeProfiler = Helper.Common.Profilers.TimeProfilerHelper;
 
-namespace OponeoNET
+namespace OponeoNET.Subjects
 {
     public class Reflection
     {

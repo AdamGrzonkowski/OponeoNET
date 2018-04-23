@@ -1,4 +1,4 @@
-﻿using OponeoNET;
+﻿using OponeoNET.Subjects;
 
 namespace UnitTests.Testers
 {

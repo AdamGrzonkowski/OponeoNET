@@ -1,4 +1,4 @@
-﻿namespace OponeoNET
+﻿namespace OponeoNET.Subjects
 {
     public class ProtectedPropsTesting
     {

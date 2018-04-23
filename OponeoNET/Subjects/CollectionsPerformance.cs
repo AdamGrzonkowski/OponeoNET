@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using TimeProfiler = Helper.Common.Profilers.TimeProfilerHelper;
 
-namespace OponeoNET
+namespace OponeoNET.Subjects
 {
     public class CollectionsPerformance
     {

@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using OponeoNET;
+using OponeoNET.Subjects;
 using UnitTests.Testers;
 
 namespace UnitTests
