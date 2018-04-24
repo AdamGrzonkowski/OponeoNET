@@ -1,4 +1,4 @@
-﻿using OponeoNET.Subjects;
+﻿using OponeoNET.Subjects.Polimorphism.Zadanie;
 
 namespace OponeoNET
 {
@@ -6,8 +6,8 @@ namespace OponeoNET
     {
         static void Main(string[] args)
         {
-            CollectionsPerformance ins = new CollectionsPerformance();
-            ins.CheckCollectionsPerformance();
+            IPolimorphismTest poli = new PolimorphismTest();
+            poli.CheckPolimorphism();
         }
     }
 }

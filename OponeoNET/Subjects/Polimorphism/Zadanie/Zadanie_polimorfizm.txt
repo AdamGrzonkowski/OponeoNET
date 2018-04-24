@@ -1,0 +1,13 @@
+﻿W oparciu o informacje zdobyte na zajęciach, zamodeluj wstępny model bazy danych, w której są trzy encje (klasy):
+User, Admin, Moderator.
+
+Na klasie User można wykonywać tylko operacje Read.
+Na klasie Moderator można wykonywać operacje Read oraz Update.
+Na klasie Admin można wykonywać operacje Create, Read, Update, Delete.
+
+Wszystkie encje mają property ID typu Guid, które jest uzupełniane tylko przy tworzeniu.
+
+Przy operacjach tworzenia i modyfikacji, powinien być logowany czas wykonania tej operacji, np. do konsoli.
+Wszelkie operacje odczytu wykonywane tylko przez Usera również powinny być logowane, dla celów statystycznych.
+
+Postaraj się użyć interfejsów, abstrakcji, overridingu oraz parametrów generycznych.

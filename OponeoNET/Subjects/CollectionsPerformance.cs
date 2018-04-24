@@ -7,7 +7,7 @@ namespace OponeoNET.Subjects
     {
         public void CheckCollectionsPerformance()
         {
-            const int _max = 100000;
+            const int _max = 10000000;
             int _lookupValue = 53759;
             List<int> list = new List<int>();
             Dictionary<int, int> list2 = new Dictionary<int, int>();
@@ -15,7 +15,7 @@ namespace OponeoNET.Subjects
             TimeProfiler.CheckPerformance(() => {
                 for (int i = 0; i < _max; i++)
                 {
-                    list.Add(i);
+                        list.Add(i);
                 }
             }, $"Adding {_max} elements to List");
 
