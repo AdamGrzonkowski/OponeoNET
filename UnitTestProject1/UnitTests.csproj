@@ -64,6 +64,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Helper.Common\Helper.Common.csproj">
+      <Project>{4f2fbaaa-a8e0-43a7-96cc-765fa229cd7f}</Project>
+      <Name>Helper.Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\OponeoNET\NET.csproj">
       <Project>{edeee8ad-6d77-43fa-bafe-4fe62bd24395}</Project>
       <Name>NET</Name>

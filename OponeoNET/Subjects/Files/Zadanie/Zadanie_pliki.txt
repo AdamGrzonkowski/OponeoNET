@@ -1,0 +1,30 @@
+﻿Napisz Loggera (wraz z jego abstrakcją, tak aby klasa była łatwo podmienialna), który będzie logować do osobnych plików informacje
+o błędach:
+FATAL - błędy przerywające działanie całej aplikacji
+ERROR - błędy przerywające działanie danej funkcjonalności
+WARN - błędy nieprzerwyające działania danej funkcjonalności, ale zaburzające jej działanie
+INFO - nie błąd, a informacja, którą chcemy zalogować
+
+Nazwy plików: Fatal, Error, Warn, Info z typem plików .log
+
+Nowe wpisy nie powinny nadpisywać poprzednich.
+
+Logi powinny mieć format:
+[Typ] <Czas_wystapienia> | Tresc wyjątku.
+Stack:
+
+czyli na przykład
+[Error] 2018.04.25 20:00:00 | Invalid operation exception.
+Stack trace:
+call something from Method 1...
+call something elese from some other Method.
+
+Do Info na pewno powinna wpadać informacja o zmianie nazwy lub usunięciu plików .dll z głównego katalogu aplikacji.
+
+* Dla wytrwałych: jeżeli plik ma więcej niż 50MB, to do jego nazwy jest dopisywana aktualna data i sufiks _archived, czyli np.:
+  Error201804252000_archived.log
+  
+  co zapewni lepszą czytelność logów. Nowe logi lądują wtedy do nowego pliku Error.log.
+
+** Dla jeszcze wytrwalszych: jeżeli następuje zdarzenie zmiany nazwy pliku z logami (a więc archiwizacji*), proces sprawdza czy
+są pliki zarchiwizowane starsze niż pół roku i je kasuje.

@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\Formatting.cs" />
+    <Compile Include="Files\TextFileHelper.cs" />
     <Compile Include="Profilers\TimeProfilerHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
